@@ -72,15 +72,4 @@ jobs:
               ghcr.io/${{ github.repository }}:latest
             sudo docker ps
             curl -f http://localhost:5000/health
-
-### Step 9: Save the file
-
-1. Press `Ctrl + S`.
-2. Close Notepad.
-
-**Important:** This first version assumes the GHCR package is publicly pullable from EC2. We'll verify that before relying on deployment. If it is private, we'll configure secure registry authentication.
-
-Also, your Nginx configuration remains unchanged.
-
-Reply **1** when saved.
 ```
