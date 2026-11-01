@@ -1,4 +1,4 @@
-﻿```yaml
+﻿
 name: AI Web App CI/CD Pipeline
 
 on:
@@ -72,4 +72,4 @@ jobs:
               ghcr.io/${{ github.repository }}:latest
             sudo docker ps
             curl -f http://localhost:5000/health
-```
+
