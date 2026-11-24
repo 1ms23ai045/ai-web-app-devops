@@ -12,8 +12,8 @@ def home():
             <title>AI Web Application</title>
         </head>
         <body style="font-family: Arial; text-align: center; margin-top: 100px;">
-            <h1>Welcome to AI Web Application!</h1>
-            <h2>End-to-End DevOps Deployment Project</h2>
+           <h2>CI/CD Deployment Demonstration</h2>
+<p>Updated automatically using GitHub Actions!</p>
             <p>Application Status: Running Successfully</p>
             <p>Powered by Python Flask and Docker</p>
         </body>
