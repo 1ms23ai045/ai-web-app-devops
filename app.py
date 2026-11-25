@@ -13,7 +13,7 @@ def home():
         </head>
         <body style="font-family: Arial; text-align: center; margin-top: 100px;">
             <h1>Welcome to AI Web Application!</h1>
-            <h2>End-to-End DevOps Deployment project workflows</h2>
+            <h2>End-to-End DevOps Deployment project</h2>
             <p>Application Status: Running Successfully</p>
             <p>Powered by Python Flask and Docker</p>
         </body>
