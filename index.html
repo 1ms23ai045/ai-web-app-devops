@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration System - Ramaiah Institute of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1> Ramaiah Institute of Technology</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#registration" class="active">Registration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="page-title">
+                <h2>Course Registration Portal</h2>
+                <p>Register for courses for the upcoming semester</p>
+            </section>
+
+            <!-- Box Model Demo Box -->
+            <div class="info-box">
+                <h3>📦 CSS Box Model Demonstration</h3>
+                <p><strong>Margin:</strong> 20px | <strong>Padding:</strong> 20px | <strong>Border:</strong> 3px solid | <strong>Border-radius:</strong> 10px</p>
+            </div>
+
+            <div class="form-wrapper">
+                <h3>Student Course Registration Form</h3>
+                <p>Fields marked with <span class="required">*</span> are mandatory</p>
+
+                <form id="registrationForm">
+                    <!-- Personal Information -->
+                    <section class="form-section">
+                        <h4>📋 Personal Information</h4>
+
+                        <div class="form-group">
+                            <label for="fullname">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullname" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentid">Student ID <span class="required">*</span></label>
+                                <input type="text" id="studentid" placeholder="2024001" pattern="[0-9]{7}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" placeholder="student@university.edu" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone <span class="required">*</span></label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of Birth <span class="required">*</span></label>
+                                <input type="date" id="dob" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="male" required> Male</label>
+                                <label><input type="radio" name="gender" value="female"> Female</label>
+                                <label><input type="radio" name="gender" value="other"> Other</label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="year">Year of Study <span class="required">*</span></label>
+                                <select id="year" required>
+                                    <option value="">-- Select Year --</option>
+                                    <option value="first">First Year</option>
+                                    <option value="second">Second Year</option>
+                                    <option value="third">Third Year</option>
+                                    <option value="fourth">Fourth Year</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="department">Department <span class="required">*</span></label>
+                                <select id="department" required>
+                                    <option value="">-- Select Department --</option>
+                                    <option value="cs">Computer Science</option>
+                                    <option value="ee">Electrical Engineering</option>
+                                    <option value="me">Mechanical Engineering</option>
+                                    <option value="business">Business Administration</option>
+                                    <option value="biology">Biology</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Course Selection -->
+                    <section class="form-section">
+                        <h4>📚 Course Selection</h4>
+
+                        <div class="form-group">
+                            <label>Course Category <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="category" value="core" required> Core</label>
+                                <label><input type="radio" name="category" value="elective"> Elective</label>
+                                <label><input type="radio" name="category" value="minor"> Minor</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Course Preferences</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="courses" value="ds"> Data Structures</label>
+                                <label><input type="checkbox" name="courses" value="web"> Web Development</label>
+                                <label><input type="checkbox" name="courses" value="db"> Database Systems</label>
+                                <label><input type="checkbox" name="courses" value="ai"> Artificial Intelligence</label>
+                                <label><input type="checkbox" name="courses" value="ml"> Machine Learning</label>
+                                <label><input type="checkbox" name="courses" value="security"> Cybersecurity</label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Time Slot <span class="required">*</span></label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="timeslot" value="morning" required> Morning</label>
+                                    <label><input type="radio" name="timeslot" value="afternoon"> Afternoon</label>
+                                    <label><input type="radio" name="timeslot" value="evening"> Evening</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="credits">Credits <span class="required">*</span></label>
+                                <input type="number" id="credits" min="1" max="24" placeholder="1-24" required>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Additional Information -->
+                    <section class="form-section">
+                        <h4>📝 Additional Information</h4>
+
+                        <div class="form-group">
+                            <label for="background">Academic Background</label>
+                            <textarea id="background" rows="4" placeholder="Describe your academic background..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requirements">Special Requirements</label>
+                            <textarea id="requirements" rows="4" placeholder="Any special accommodations needed..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" required>
+                                I agree to the Terms and Conditions <span class="required">*</span>
+                            </label>
+                        </div>
+                    </section>
+
+                    <!-- Buttons -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit Registration</button>
+                        <button type="button" class="btn btn-secondary">Save Draft</button>
+                        <button type="reset" class="btn btn-tertiary">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p><strong>CSS Box Model Properties Demonstrated:</strong></p>
+        <p>Margin | Padding | Border | Border-radius | Box-shadow</p>
+        <p>&copy; 2025 XYZ University. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Registration Submitted Successfully!\n\n(This is a demonstration)');
+        });
+    </script>
+</body>
+
+</html>
